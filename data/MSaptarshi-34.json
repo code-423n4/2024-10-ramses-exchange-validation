@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "MSaptarshi",
+  "risk": "2",
+  "title": "CREATE2 address collision during pool deployment may result in  complete draining of the pool",
+  "issueId": 34,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/34",
+  "cohort": "cohort_1",
+  "sourceId": 85,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/85"
+}
