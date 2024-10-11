@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "ignite256",
+  "risk": "2",
+  "title": "If the limit price for slippage protection is reached the transaction should revert",
+  "issueId": 88,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/88",
+  "cohort": "cohort_1",
+  "sourceId": 2,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/2"
+}
