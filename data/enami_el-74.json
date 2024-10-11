@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "enami_el",
+  "risk": "2",
+  "title": "Vulnerability to Short-Term Price Manipulation in Swap Execution",
+  "issueId": 74,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/74",
+  "cohort": "cohort_1",
+  "sourceId": 30,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/30"
+}
