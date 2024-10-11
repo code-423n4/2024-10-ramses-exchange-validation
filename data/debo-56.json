@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "debo",
+  "risk": "2",
+  "title": "Reentrancy Vulnerability in collect Function of RamsesV3Pool Contract",
+  "issueId": 56,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/56",
+  "cohort": "cohort_1",
+  "sourceId": 102,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/102"
+}
