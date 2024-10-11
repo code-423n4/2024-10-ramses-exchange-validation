@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "BugHunters1",
+  "risk": "2",
+  "title": "Users cannot set fee for the pool because setFee function will always fail due to an inappropriate check",
+  "issueId": 20,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/20",
+  "cohort": "cohort_1",
+  "sourceId": 113,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/113"
+}
