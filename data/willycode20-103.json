@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "willycode20",
+  "risk": "2",
+  "title": "The [`Tick::getFeeGrowthInside`] doesn't handle all edge cases when computing the return value for the `getfeeGrowthInside()` function",
+  "issueId": 103,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/103",
+  "cohort": "cohort_1",
+  "sourceId": 45,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/45"
+}
