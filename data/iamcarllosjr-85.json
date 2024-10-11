@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "iamcarllosjr",
+  "risk": "3",
+  "title": "Compiling the contract in a version above 0.8.13 and below 0.8.27 means that the use of customErrors in the required functions does not work correctly",
+  "issueId": 85,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/85",
+  "cohort": "cohort_1",
+  "sourceId": 29,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/29"
+}
