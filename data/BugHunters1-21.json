@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "BugHunters1",
+  "risk": "2",
+  "title": "Critical Risk of Exploitative Fees and Invalid Tick Spacing in createPool Function Due to Missing Validations ",
+  "issueId": 21,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/21",
+  "cohort": "cohort_1",
+  "sourceId": 90,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/90"
+}
