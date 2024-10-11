@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "TECHFUND-inc",
+  "risk": "3",
+  "title": "Position::positionHash() function is vulnerable to Hash collision",
+  "issueId": 47,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/47",
+  "cohort": "cohort_1",
+  "sourceId": 4,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/4"
+}
