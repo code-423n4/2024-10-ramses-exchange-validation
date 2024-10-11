@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "bareli",
+  "risk": "2",
+  "title": "No check for ticks range in periodCumulativesInside",
+  "issueId": 52,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/52",
+  "cohort": "cohort_1",
+  "sourceId": 110,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/110"
+}
