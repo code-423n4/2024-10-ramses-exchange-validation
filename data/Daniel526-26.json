@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "Daniel526",
+  "risk": "2",
+  "title": "`getFeeGrowthInside` can incorrectly return zero because of fee growth underﬂow",
+  "issueId": 26,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/26",
+  "cohort": "cohort_1",
+  "sourceId": 48,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/48"
+}
