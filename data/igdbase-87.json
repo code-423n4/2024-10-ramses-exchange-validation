@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "igdbase",
+  "risk": "3",
+  "title": "Manipulation of `slot0` Price Can Lead to Inefficient Liquidity Adjustments in `_modifyPosition`",
+  "issueId": 87,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/87",
+  "cohort": "cohort_1",
+  "sourceId": 89,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/89"
+}
