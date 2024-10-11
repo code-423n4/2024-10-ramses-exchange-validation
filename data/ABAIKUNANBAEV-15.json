@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "2",
+  "title": "secondsPerLiquidityPeriodStartX128 is only initialized for the first period",
+  "issueId": 15,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/15",
+  "cohort": "cohort_1",
+  "sourceId": 34,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/34"
+}
