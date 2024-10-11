@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "0xbrett8571",
+  "risk": "2",
+  "title": "When caching is true, the function updates storage variables, which can affect subsequent calls. When false, these updates are not made, leading to potentially different results.",
+  "issueId": 9,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/9",
+  "cohort": "cohort_1",
+  "sourceId": 50,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/50"
+}
