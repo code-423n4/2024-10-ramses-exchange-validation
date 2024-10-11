@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "enami_el",
+  "risk": "2",
+  "title": "Lack of Address Verification in setFeeCollector ",
+  "issueId": 80,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/80",
+  "cohort": "cohort_1",
+  "sourceId": 9,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/9"
+}
