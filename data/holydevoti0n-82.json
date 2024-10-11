@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "holydevoti0n",
+  "risk": "2",
+  "title": "ClGaugeFactory and Gauge Creation is vulnerable to re-org attacks",
+  "issueId": 82,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/82",
+  "cohort": "cohort_1",
+  "sourceId": 25,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/25"
+}
