@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "iamcarllosjr",
+  "risk": "3",
+  "title": "Implicit casting in uint128 can cause truncation if delta is greater than 2^128 - 1.",
+  "issueId": 86,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/86",
+  "cohort": "cohort_1",
+  "sourceId": 61,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/61"
+}
