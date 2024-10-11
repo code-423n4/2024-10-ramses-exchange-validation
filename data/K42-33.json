@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "K42",
+  "risk": "3",
+  "title": "Wrong period linking in multiple period advancements",
+  "issueId": 33,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/33",
+  "cohort": "cohort_1",
+  "sourceId": 65,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/65"
+}
