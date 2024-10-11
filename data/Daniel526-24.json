@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "Daniel526",
+  "risk": "2",
+  "title": " Integer Overflow Risk in Protocol Fee Calculation",
+  "issueId": 24,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/24",
+  "cohort": "cohort_1",
+  "sourceId": 18,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/18"
+}
