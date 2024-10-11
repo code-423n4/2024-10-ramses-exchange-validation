@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "willycode20",
+  "risk": "3",
+  "title": "Possible race condition risk on the [`FeeCollector::initialize()`] due to lack of access control allowing a malicious actor calling this function upon deployment",
+  "issueId": 104,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/104",
+  "cohort": "cohort_1",
+  "sourceId": 8,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/8"
+}
