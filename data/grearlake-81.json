@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "grearlake",
+  "risk": "2",
+  "title": "protocol do not work with rebasing tokens",
+  "issueId": 81,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/81",
+  "cohort": "cohort_1",
+  "sourceId": 114,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/114"
+}
