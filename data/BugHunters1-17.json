@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "BugHunters1",
+  "risk": "2",
+  "title": "An attacker can DoS the setPoolFeeProtocolBatch due to invalidated pool addresses.",
+  "issueId": 17,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/17",
+  "cohort": "cohort_1",
+  "sourceId": 100,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/100"
+}
