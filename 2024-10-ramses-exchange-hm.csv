@@ -1,0 +1,105 @@
+issue,title,primary finding,validator comment,status,root cause (URL),size,robotLabel
+findings-2,"When minting or increasing liquidity through `NonfungiblePositionManager`, access ETH send to the contract is not refunded ",,"It's being handled elsewhere. Even if it's not, user mistake is not protocol responsibility",Unsatisfactory,,83,:robot:_primary
+findings-3,The fee for the protocol in the function RamsesV3Pool::flash() if not calculated correctly,findings-3,Will let sponsor review,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/236e9e9e0cf452828ab82620b6c36c1e6c7bb441/contracts/CL/core/RamsesV3Pool.sol#L713,54,:robot:_primary
+findings-4,"When pool has zero liquidity, its price can be manipulated through calling `RamsesV3Pool.swap` function and possibly further minting single-sided liquidity",,Common issue in DeFi. ,Unsatisfactory,,159,:robot:_primary
+validation-10,Reward Rate Inconsistency Due to Period Transition in GaugeV3,,Similar but not as described in #35. Suggested fixes would have no impact and/or upset the intended working logic,Unsatisfactory,,105,:robot:_12_group
+validation-100,Pool fee structure can be broken once set,validation-100,Fee constraint due to a missing 0,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/main/contracts/CL/core/libraries/ProtocolActions.sol#L78,98,:robot:_14_group
+validation-101,Only 1/8 of the fee is captured for feeCollector rather than the actual % such as 80%,findings-3,Will let sponsor review,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/236e9e9e0cf452828ab82620b6c36c1e6c7bb441/contracts/CL/core/RamsesV3Pool.sol#L713,240,:robot:_54_group
+validation-102,Edge case in `periodCumulativesInside` returns in-accurate data used for `periodRewardInfo`,,Intended design with trivial change suggested. QA at best,Unsatisfactory,,79,:robot:_17_group
+validation-103,The [`Tick::getFeeGrowthInside`] doesn't handle all edge cases when computing the return value for the `getfeeGrowthInside()` function,,Intended design that entails trivial case,Unsatisfactory,,35,:robot:_11_group
+validation-104,Possible race condition risk on the [`FeeCollector::initialize()`] due to lack of access control allowing a malicious actor calling this function upon deployment,,Bot: [L-3] Initializers could be front-run,Unsatisfactory,,39,:robot:_primary
+validation-11,Inconsistent Cached Rewards in GaugeV3 Contract,,Working as intended. caching is caller controlled,Unsatisfactory,,113,:robot:_primary
+validation-12,getPeriodReward() function uses caller's address as the position owner address,,Owner is caller controlled. Insufficient proof alleging the claim too,Unsatisfactory,,46,:robot:_primary
+validation-13,lastClaimByToken is incorrectly updated by assigning the period value to the one that was before the current one,,Working flawlessly as intended. Insufficient proof.,Unsatisfactory,,53,:robot:_primary
+validation-14,Amount to claim is incorrectly calculated,,Working flawlessly as intended.,Unsatisfactory,,53,:robot:_primary
+validation-15,secondsPerLiquidityPeriodStartX128 is only initialized for the first period,,Working as intended as _updatePosition will have this taken care of,Unsatisfactory,,64,:robot:_01_group
+validation-16,periodSecondsInsideX96 is calculated using liquidity value which should not be the case,,Insufficient proof alleging the claim,Unsatisfactory,,35,:robot:_primary
+validation-17,An attacker can DoS the setPoolFeeProtocolBatch due to invalidated pool addresses.,,It's a restricted function,Unsatisfactory,,68,:robot:_24_group
+validation-18,Exploitable Timestamp Underflow in transform Function Allows Manipulation of Observations for Financial Gain,,The function will just revert,Unsatisfactory,,70,:robot:_02_group
+validation-19,Unauthurized user can update fee protocol due to lack of proper access control mechanism,,Inconsequential as the fees aren't caller controlled,Unsatisfactory,,80,:robot:_03_group
+validation-2,Incorrect fee calculation in flash(),findings-3,Will let sponsor review,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/236e9e9e0cf452828ab82620b6c36c1e6c7bb441/contracts/CL/core/RamsesV3Pool.sol#L713,62,:robot:_54_group
+validation-20,Users cannot set fee for the pool because setFee function will always fail due to an inappropriate check,,ProtocolActions is a library contract,Unsatisfactory,,67,:robot:_03_group
+validation-21,Critical Risk of Exploitative Fees and Invalid Tick Spacing in createPool Function Due to Missing Validations ,,QA at best on limit check,Unsatisfactory,,64,:robot:_14_group
+validation-22,DoS of a valid tickspacing due to inadequate check in enableTickspacing.,,Trivial change on an intended design,Unsatisfactory,,64,:robot:_primary
+validation-23,Lack of Access Control on Critical Functions,,Taken of by IRamsesV3Pool(pool).initialize(sqrtPriceX96) at the factory contract,Unsatisfactory,,55,:robot:_03_group
+validation-24, Integer Overflow Risk in Protocol Fee Calculation,,QA at best as the logic would simply revert,Unsatisfactory,,40,:robot:_primary
+validation-25,Use of `slot0` to get `sqrtPriceLimitX96` can lead to price manipulation.,,TWAP is externally used indeed,Unsatisfactory,,39,:robot:_10_group
+validation-26,`getFeeGrowthInside` can incorrectly return zero because of fee growth underﬂow,,feeGrowthInside0X128 and feeGrowthInside1X128 are already inside unchecked {},Unsatisfactory,,65,:robot:_primary
+validation-28,Position can be opened even when the  NonfungiblePositionManager does not hold the Uniswap V3 Position NFT,,That's intended logic for minting,Unsatisfactory,,59,:robot:_07_group
+validation-3,Incorrect oracle initialization,,Inadequate proof alleging the flaw,Unsatisfactory,,79,:robot:_04_group
+validation-30,Liquidity Adjustment Arithmetic Error in RamsesV3Pool,,It will simply revert then,Unsatisfactory,,51,:robot:_26_group
+validation-31,Incorrect Liquidity Adjustment Due to Unsafe Casting in RamsesV3Pool,,It will simply revert then,Unsatisfactory,,75,:robot:_26_group
+validation-32,Concurrent Liquidity Collection Issue in RamsesV3Pool,,It's lock() guarded,Unsatisfactory,,59,:robot:_primary
+validation-33,Wrong period linking in multiple period advancements,,"Intended as per function NatSpec: if a new period, advance on interaction",Unsatisfactory,,117,:robot:_primary
+validation-34,CREATE2 address collision during pool deployment may result in  complete draining of the pool,,Circumvented by getPool[token0][token1][tickSpacing] == address(0),Unsatisfactory,,75,:robot:_primary
+validation-35,Imprecise tick cumulative is calculated inside the Oracle observations,validation-35,Division before multiplication,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/main/contracts/CL/core/libraries/Oracle.sol#L284-L286,124,:robot:_primary
+validation-36,Stuck rewards in GaugeV3 due to improper timing coordination and period dependency on `block.timestamp`,validation-36,Will sponsor review,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/main/contracts/CL/gauge/GaugeV3.sol#L321-L325,66,:robot:_primary
+validation-37,Incorrect remainingTime calculation in left() leads to incorrect distributions,,Voter.sol is OOS,Unsatisfactory,,61,:robot:_primary
+validation-38,Lack of Access Control in RamsesV3Factory Pool Creation Enables Protocol Abuse,,Intended design. Low QA on spamming,Unsatisfactory,,149,:robot:_03_group
+validation-39,Unrestricted Tick Spacing in RamsesV3Factory Enables DoS Attacks,,No details showing which function will be affected. It's a restricted call after all,Unsatisfactory,,103,:robot:_18_group
+validation-4,Incorrect initialization order in pool initialize(),,Inadequate proof alleging the flaw,Unsatisfactory,,62,:robot:_primary
+validation-40,Incomplete Token Calculation in RamsesV3Pool Leads to Liquidity Imbalance and Value Extraction,,The conditional logic has the entire range taken care of flawlessly,Unsatisfactory,,140,:robot:_26_group
+validation-41,Oracle Miscalculation During Zero Liquidity Periods Leads to Inaccurate AMM Data,validation-41,Will let sponsor review,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/main/contracts/CL/core/libraries/Oracle.sol#L37,99,:robot:_primary
+validation-42,Uninitialized Oracle Slots During Expansion Cause Data Gaps and Inaccurate AMM Readings,validation-42,Possible overshoot leading to uninitialized slots,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/main/contracts/CL/core/libraries/Oracle.sol#L74,130,:robot:_09_group
+validation-43,Unbounded Oracle Growth Enables DoS Attacks in AMM Pool,,Parameters are caller controlled,Unsatisfactory,,103,:robot:_primary
+validation-44,Observation can be exploited via newPeriod function,,period = _blockTimestamp() / 1 * 1 weeks weeks will always be larger than 1 + last.blockTimestamp,Unsatisfactory,,86,:robot:_02_group
+validation-45,Fee collection pool doesn't match the distribution gauge,validation-45,"Doesn't seem to correlate, but will let the sponsor review",Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/236e9e9e0cf452828ab82620b6c36c1e6c7bb441/contracts/CL/gauge/FeeCollector.sol#L107-L111,53,:robot:_primary
+validation-46,Accumulated Token Allowances in FeeCollector Contract,,"QA at best as has been commonly reported in past bot racing. Additionally, this concerns fee distributor contract is compromised or upgraded maliciously",Unsatisfactory,,45,:robot:_primary
+validation-47,Position::positionHash() function is vulnerable to Hash collision,,QA at best as has been commonly reported in past bot racing,Unsatisfactory,,45,:robot:_primary
+validation-48,"Tick data in the storage could be stale, primarily due to how tick data is being deleted ",,"That's how delete works as you described, but the POC lacks proof where the impact will be",Unsatisfactory,,57,:robot:_primary
+validation-49,Incorrect check in `setFee()` restricts flexibility in `$.fee` ,validation-100,Fee constraint due to a missing 0,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/main/contracts/CL/core/libraries/ProtocolActions.sol#L78,55,:robot:_primary
+validation-5,`PUSH0` opcode is Not Supported on Linea ,,Paris over Shanghai has had this taken care of,Unsatisfactory,,59,:robot:_primary
+validation-50,Anyone can change protocol fee for pool,,Inconsequential as the fees aren't caller controlled,Unsatisfactory,,77,:robot:_primary
+validation-51,updating of minter positions depends on `slot0` price which can be manipulated,,TWAP is externally used indeed,Unsatisfactory,,225,:robot:_primary
+validation-52,No check for ticks range in periodCumulativesInside,,QA at best as these will be taken care of by subsequent conditional checks ,Unsatisfactory,,33,:robot:_primary
+validation-53,safeMint should be used in place of mint,,Bot: [M-2] _safeMint() should be used rather than _mint() wherever possible,Unsatisfactory,,74,:robot:_primary
+validation-54,No check forAuthorizedForToken in increaseLiquidity.,validation-66,Missing authorized check,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/236e9e9e0cf452828ab82620b6c36c1e6c7bb441/contracts/CL/periphery/NonfungiblePositionManager.sol#L195-L261,52,:robot:_primary
+validation-55,check for pool address in createPool.,,pool assigned unlikely a zero address,Unsatisfactory,,53,:robot:_primary
+validation-56,Reentrancy Vulnerability in collect Function of RamsesV3Pool Contract,,It's lock() guarded,Unsatisfactory,,177,:robot:_16_group
+validation-57,RamsesV3Pool has Reentrancy in burn Function Due to Public _advancePeriod Function,,It's lock() guarded,Unsatisfactory,,138,:robot:_16_group
+validation-58,RamsesV3Pool has Reentrancy in Cross Functions Due to Public _advancePeriod Function,,They are all lock() guarded,Unsatisfactory,,137,:robot:_16_group
+validation-59,RamsesV3Pool Swap function call is successfully called before revert,,Coded POC does not elicit reentrancy attack,Unsatisfactory,,119,:robot:_16_group
+validation-6,"""Stack too deep"" Compilation Error in `_updatePosition` Function",,QA at best. Contracts have all been successfully compiled,Unsatisfactory,,91,:robot:_primary
+validation-60,NonfungiblePositionManager has Incorrect Inheritance Order Causes Balance Not Updating in NonfungiblePositionManager,,Inadequate proof alleging the flaw. Working as intended,Unsatisfactory,,114,:robot:_primary
+validation-61,RamsesV3Pool has _advancePeriod Function Is Public but Should Be Internal,validation-61,Lacking details of where the impact would hit. Will let sponsor review,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/236e9e9e0cf452828ab82620b6c36c1e6c7bb441/contracts/CL/core/RamsesV3Pool.sol#L748-L778,93,:robot:_16_group
+validation-62,RamsesV3Factory has Unauthorized Pool Creation Due to Missing restricted Modifier on createPool Function,,Intended design. Low QA on spamming,Unsatisfactory,,101,:robot:_03_group
+validation-63,Position has The _updatePosition function should be internal not external,,It's a library contract. Failing to elicit where the impact is,Unsatisfactory,,186,:robot:_primary
+validation-64,FeeCollector has Missing Access Control on collectProtocolFees Function,,_treasury is hardcoded in token safeTransfer,Unsatisfactory,,57,:robot:_primary
+validation-65,Missing Reentrancy Lock on cachePeriodEarned Function in GaugeV3 Contract,validation-96,cachePeriodEarned shoud be set private callable only getReward(). Note that lock() is simply a reentrancy guard,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/236e9e9e0cf452828ab82620b6c36c1e6c7bb441/contracts/CL/gauge/GaugeV3.sol#L286,91,:robot:_00_group
+validation-66,NonfungiblePositionManager has Missing Access Control in increaseLiquidity Function,validation-66,Missing authorized check,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/236e9e9e0cf452828ab82620b6c36c1e6c7bb441/contracts/CL/periphery/NonfungiblePositionManager.sol#L195-L261,97,:robot:_30_group
+validation-67,RamsesV3Pool Contract Reentrancy Vulnerability in mint Function,,lock() is mutex reentrancy guard,Unsatisfactory,,117,:robot:_primary
+validation-68,High Centralization Risk Due to Single-Entity Access Control,,Similar to bot: [M-1] Centralization Risk for trusted owners,Unsatisfactory,,41,:robot:_primary
+validation-69,Unchecked External Call in Pool Deployment ,,Devoid of adequate proof on an impossible scenario,Unsatisfactory,,48,:robot:_primary
+validation-7,Non-owners can claim rewards for NFT positions in GaugeV3,validation-91,Owner might lose reward,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/236e9e9e0cf452828ab82620b6c36c1e6c7bb441/contracts/CL/gauge/GaugeV3.sol#L452,74,:robot:_primary
+validation-70,Lack of Slippage Protection and Deadline in Pool Initialization,,Pool creation does not involve trading yet,Unsatisfactory,,77,:robot:_primary
+validation-71,Potential for Unbounded Growth in Tick Spacings,,No details showing which function will be affected. It's a restricted call after all,Unsatisfactory,,46,:robot:_primary
+validation-72,   Lack of Slippage Protection in Swaps,,Common issue on DeFi. Infeasible on L2 too,Unsatisfactory,,41,:robot:_20_group
+validation-73,Potential for Sandwich Attacks,,Common issue on DeFi. Infeasible on L2 too,Unsatisfactory,,39,:robot:_primary
+validation-74,Use of slot0 to Get sqrtPriceX96 Can Lead to Price Manipulation ,,TWAP is externally used indeed. MEV infeasible on L2,Unsatisfactory,,57,:robot:_10_group
+validation-75,Lack of Token Recovery Mechanism,,QA at best. Users' mistakes not protocol's responsibility,Unsatisfactory,,38,:robot:_primary
+validation-76,Possible Front-Running Attack on Reward Distribution in GaugeV3,,Lacking proof on the protocol not using time based reward distribution. This exploit is infeasible on L2 too,Unsatisfactory,,60,:robot:_08_group
+validation-77,Potential for Liquidity Manipulation to Avoid Fee Accumulation ,,Fair game on an intended design,Unsatisfactory,,62,:robot:_06_group
+validation-78, Potential Price Manipulation to Prevent Liquidations ,,Fair game on an intended design,Unsatisfactory,,127,:robot:_06_group
+validation-79,Potential for Gauge Reward Manipulation in GaugeV3,,Lacking proof on the protocol not using time based reward distribution. This exploit is infeasible on L2 too,Unsatisfactory,,73,:robot:_08_group
+validation-8,Incorrect Caching Logic in `cachePeriodEarned` Function Leads to Reward Calculation Mismatch,,Suggested fixes would upset the intended working logic,Unsatisfactory,,109,:robot:_00_group
+validation-80,Lack of Address Verification in setFeeCollector ,,QA at best for address(0) check on a restricted function,Unsatisfactory,,28,:robot:_primary
+validation-81,protocol do not work with rebasing tokens,,Readme: Fee-on-transfer tokens (tax tokens) are not compatible with the concentrated liquidity system.,Unsatisfactory,,52,:robot:_primary
+validation-82,ClGaugeFactory and Gauge Creation is vulnerable to re-org attacks,,Lacking proof of burden on a QA prone reorg,Unsatisfactory,,35,:robot:_primary
+validation-83,Oracle price broken due to `newPeriod` logic conflicting with `transform` when writing observations,,Working flawlessly as intended. Parallels advance period,Unsatisfactory,,94,:robot:_primary
+validation-84,User can steal rewards due to staled `secondsDebtX96` ,,This is intended so it could skip to update(),Unsatisfactory,,73,:robot:_primary
+validation-85,Compiling the contract in a version above 0.8.13 and below 0.8.27 means that the use of customErrors in the required functions does not work correctly,,"Lacking proof. Additionally, that's only a revert message",Unsatisfactory,,28,:robot:_primary
+validation-86,Implicit casting in uint128 can cause truncation if delta is greater than 2^128 - 1.,,It will simply revert then,Unsatisfactory,,20,:robot:_primary
+validation-87,Manipulation of `slot0` Price Can Lead to Inefficient Liquidity Adjustments in `_modifyPosition`,,TWAP is externally used indeed,Unsatisfactory,,71,:robot:_primary
+validation-88,If the limit price for slippage protection is reached the transaction should revert,,Devoid of detailed POC alleging the flaw,Unsatisfactory,,19,:robot:_primary
+validation-89,LPholders can be prevented from burning their position NFTs,validation-66,Missing authorized check,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/236e9e9e0cf452828ab82620b6c36c1e6c7bb441/contracts/CL/periphery/NonfungiblePositionManager.sol#L195-L261,75,:robot:_primary
+validation-9,"When caching is true, the function updates storage variables, which can affect subsequent calls. When false, these updates are not made, leading to potentially different results.",,Suggested fixes would upset the intended working logic,Unsatisfactory,,137,:robot:_00_group
+validation-90,Reliance on library that uses code that wouldn't work on ZKEVMs,,zkSync is OOS,Unsatisfactory,,44,:robot:_primary
+validation-91,`getReward` incorrectly sets msg.sender as receiver instead of owner.,validation-91,Owner might lose reward,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/236e9e9e0cf452828ab82620b6c36c1e6c7bb441/contracts/CL/gauge/GaugeV3.sol#L452,45,:robot:_05_group
+validation-92,Initial rewards supplied to a gauge prior may be lost,,Voter.sol is OOS,Unsatisfactory,,61,:robot:_primary
+validation-93,Incorrectly updated `lastClaimByToken` mapping in `_getAllRewards`,,Working flawlessly as intended. Insufficient proof.,Unsatisfactory,,89,:robot:_22_group
+validation-94,Slot0 should not be used as it is easy to manipulate,,TWAP is externally used indeed. MEV infeasible on L2,Unsatisfactory,,44,:robot:_primary
+validation-95,getReward should not forcefully transfer reward to msg.sender,validation-91,Owner might lose reward,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/236e9e9e0cf452828ab82620b6c36c1e6c7bb441/contracts/CL/gauge/GaugeV3.sol#L452,79,:robot:_05_group
+validation-96,The function cachePeriodEarned has no authorization.,validation-96,cachePeriodEarned shoud be set private callable only getReward(),Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/236e9e9e0cf452828ab82620b6c36c1e6c7bb441/contracts/CL/gauge/GaugeV3.sol#L286,160,:robot:_00_group
+validation-97,Tick=>update not allow unchecked,,SafeMath is part of 8.0,Unsatisfactory,,110,:robot:_primary
+validation-98,Oracle Price Manipulation at Period Transitions,,Devoid of coded POC on price manipulation that's generally infeasible in L2,Unsatisfactory,,71,:robot:_02_group
+validation-99,Accumulated fees could become 0 because of unchecked wrapping,,It's by design as already commented in the code logic,Unsatisfactory,,29,:robot:_primary
