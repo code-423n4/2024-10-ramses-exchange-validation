@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "Auditor2947",
+  "risk": "2",
+  "title": " Lack of Validation in Mint Function",
+  "issueId": 119,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/119",
+  "cohort": "cohort_2",
+  "sourceId": 141,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/141"
+}
