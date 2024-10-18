@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "JuggerNaut63",
+  "risk": "2",
+  "title": "Lack of Input Validation in `periodCumulativesInside` Function",
+  "issueId": 121,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/121",
+  "cohort": "cohort_2",
+  "sourceId": 134,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/134"
+}
