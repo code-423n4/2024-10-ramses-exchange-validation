@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "NexusAudits",
+  "risk": "2",
+  "title": "Fee Calculation Error in decreaseLiquidity Leads to Overpayment on Partial Liquidity Removal",
+  "issueId": 127,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/127",
+  "cohort": "cohort_2",
+  "sourceId": 147,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/147"
+}
