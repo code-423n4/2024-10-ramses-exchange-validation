@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "air_0x",
+  "risk": "2",
+  "title": "owner check can be bypassed to claim reward ",
+  "issueId": 130,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/130",
+  "cohort": "cohort_2",
+  "sourceId": 130,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/130"
+}
