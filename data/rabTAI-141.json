@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "rabTAI",
+  "risk": "2",
+  "title": "Missing Return Value Check for ERC20 transfer and transferFrom Operations",
+  "issueId": 141,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/141",
+  "cohort": "cohort_2",
+  "sourceId": 152,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/152"
+}
