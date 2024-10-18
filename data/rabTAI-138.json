@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "rabTAI",
+  "risk": "3",
+  "title": "Lack of Access Control in collectProtocolFees() Allows Unauthorized Fee Collection",
+  "issueId": 138,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/138",
+  "cohort": "cohort_2",
+  "sourceId": 148,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/148"
+}
