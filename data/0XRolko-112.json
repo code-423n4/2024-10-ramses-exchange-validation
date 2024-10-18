@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "0XRolko",
+  "risk": "2",
+  "title": "Lack of address(0) check when initializing the `FeeCollector` contract.",
+  "issueId": 112,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/112",
+  "cohort": "cohort_2",
+  "sourceId": 119,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/119"
+}
