@@ -1,0 +1,38 @@
+issue,title,primary finding,validator comment,status,root cause (URL),size,robotLabel
+findings-26,Having only one firstPeriod per gauge results in the waste of unnecessary fee cost for reward tokens added later,,QA bound due to low likelihood of occurence,Unsatisfactory,,68,:robot:_01_group
+findings-27,Loss of funds for positions created later than the gauge of a pool,,QA bound due to low likelihood of occurence,Unsatisfactory,,64,:robot:_primary
+findings-28,`NonfungiblePositionManager` does not work properly because `computeAddress` does not compute the right address for a pool ,,POOL_INIT_CODE_HASH is a constant,Unsatisfactory,,202,
+findings-29,It is not possible for a pool to have a protocolFee of 0,,That's the intended logic design,Unsatisfactory,,77,:robot:_00_group
+findings-30,"When initializing a pool, no value is set for its `feeProtocol` variable  resulting in revenue loss for the protocol",,QA at best since this uninitialized variable will easily be taken care of via the deploy script,Unsatisfactory,,58,:robot:_00_group
+findings-31,The function `Oracle.newPeriod` does not create a new observation rendering the whole period system useless,,Incorrect perception. Devoid of coded POC to substanstiate the alleged flaw,Unsatisfactory,,147,
+validation-111,"Wrong cast in the `Tick::tickSpacingToMaxLiquidityPerTick` function, which can lead to an unintended conversion.",,MAX_TICK = -MIN_TICK will assuredly render maxTick - minTick > 0,Unsatisfactory,,57,:robot:_primary
+validation-112,Lack of address(0) check when initializing the `FeeCollector` contract.,,QA on address(0) check,Unsatisfactory,,40,:robot:_primary
+validation-113,Use of `upgradable` tools as part of a `non-upgradable` contract in the `FeeCollector` contract.,,OZ battle tested. Bot: [L-3] Initializers could be front-run,Unsatisfactory,,78,:robot:_primary
+validation-114,Lack of zero check in the `RamsesV3Factory::setFee` function. ,,QA on 0 value check,Unsatisfactory,,37,:robot:_primary
+validation-115,Unnecessary storage write and event emission in the `RamsesV3Factory::setFeeCollector` function.,,QA at best on sanity check,Unsatisfactory,,34,:robot:_primary
+validation-116,Missing Validation in Pool Initialization Leading to Potential Control Hijack,,"ramsesV3PoolDeployer == address(0) ensures only callable once, amd this is a restricted function",Unsatisfactory,,53,:robot:_primary
+validation-117,Missing Input Validation in Batch Functions Leading to Potential Gas Wastage,,QA at best on sanity check for a restricted call,Unsatisfactory,,58,:robot:_primary
+validation-118,Potential Arithmetic Overflow in Fee Calculations,,SafeMath already in 8.0,Unsatisfactory,,46,:robot:_03_group
+validation-119, Lack of Validation in Mint Function,,It's caller's responsibility to sanitize. It's typically UX taken care of,Unsatisfactory,,28,:robot:_02_group
+validation-120,Missing Tick Range Validation in ticks Function,,Caller's responsibility to sanitize it. This is just a view function after all,Unsatisfactory,,81,:robot:_05_group
+validation-121,Lack of Input Validation in periodCumulativesInside Function,,Caller's responsibility to sanitize it. This is a library function after all,Unsatisfactory,,108,:robot:_primary
+validation-122,Mismatched Data Type in Fee Growth Calculation,,"As you mentioned, it will just revert when need be. No vulnerability entailed",Unsatisfactory,,113,:robot:_primary
+validation-123,RamsesV3 pools continue using outdated default feeProtocol values leading to incorrect fee splits,,It will be updated via ProtocolActions.setFeeProtocol(),Unsatisfactory,,91,:robot:_primary
+validation-124,Treasury fees are not collected before setting a lower or higher treasury fee percentage,validation-124,It's going to be a complicated fix related to a trusted call. Will flag it to the sponsor,Satisfactory,https://github.com/code-423n4/2024-10-ramses-exchange/blob/4a40eba36bc47eba8179d4f6203a4b84561a4415/contracts/CL/gauge/FeeCollector.sol#L57,53,:robot:_primary
+validation-125,Accounting Error in NonfungiblePositionManager Prevents Users from Burning Positions,,"Logic comment already comments this won't be an issue. And, your coded Scenario also confirms it",Unsatisfactory,,141,:robot:_primary
+validation-126,Timing Flaw in NonfungiblePositionManager Allows Unearned Fee Collection on New Positions,,Devoid of adequate proof alleging the flaw in the atomic logic,Unsatisfactory,,156,:robot:_primary
+validation-127,Fee Calculation Error in decreaseLiquidity Leads to Overpayment on Partial Liquidity Removal,,The suggested fix will incur under payment of fee on the already flawless logic,Unsatisfactory,,109,:robot:_primary
+validation-128,mismatch parameter in swap function ,,Order does not matter in named parameters,Unsatisfactory,,74,:robot:_primary
+validation-129,Mismatch in order of parameters ,,Order does not matter in named parameters,Unsatisfactory,,71,:robot:_primary
+validation-130,owner check can be bypassed to claim reward ,,Related to known issue from Phase 1: #18,Unsatisfactory,,76,:robot:_primary
+validation-136,Incorrect Pool Price Initialization in `RamsesV3Factory.createPool` Due to Token Reordering,,Uniswap will have this taken care of,Unsatisfactory,,70,:robot:_primary
+validation-137,Incorrect Protocol Fee Calculation in flash Function,,Known issue from Phase 1: #21,Unsatisfactory,,35,:robot:_00_group
+validation-138,Lack of Access Control in collectProtocolFees() Allows Unauthorized Fee Collection,,No vulnerability as the permissionless call will have fund transferred to the contract itself,Unsatisfactory,,42,:robot:_primary
+validation-139,Potential for Overflow in Unchecked Math Operations,,feeGrowthInside0X128 - self.feeGrowthInside0LastX128 impossible to be less than 0 due to their cumulative nature,Unsatisfactory,,37,:robot:_primary
+validation-140,Missing Reentrancy Guard in mint() Function Can Lead to Double Minting and Fund Loss,,Doesn't make sense since this is a payable function,Unsatisfactory,,41,:robot:_primary
+validation-141,Missing Return Value Check for ERC20 transfer and transferFrom Operations,,Readme: ERC20 token behaviors OOS,Unsatisfactory,,30,:robot:_primary
+validation-131,Common tokens such as WETH9 work differently on chains such a Blast which isn't taken into account during transfer calls,,PeripheryImmutableState.sol OOS,Unsatisfactory,,32,:robot:_primary
+validation-134,ClGaugeFactory is missing re-entrancy guard on the createGauge function,,It's getGauge[pool] == address(0) guarded,Unsatisfactory,,86,:robot:_primary
+validation-133,GaugeV3 has Incorrect Reward Calculation Including Ongoing Period,,Inadequate proof alleging the flaw,Unsatisfactory,,104,:robot:_06_group
+validation-135,GaugeV3 has Off-by-One Error in Reward Accounting Allows Double-Claiming of Rewards,,Inadequate proof alleging the flaw,Unsatisfactory,,108,:robot:_primary
+validation-132,RamsesV3Factory has poolFeeProtocol function that returns improper results,,That's the intended logic design,Unsatisfactory,,136,:robot:_00_group
