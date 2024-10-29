@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "ihuntpackets",
+  "risk": "3",
+  "title": "Integer Overflow in 2024-10-ramses-exchange/contracts/CL/periphery/NonfungiblePositionManager.sol",
+  "issueId": 262,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/262",
+  "cohort": "cohort_3",
+  "sourceId": 165,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/165"
+}
