@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "DCENT09",
+  "risk": "2",
+  "title": "Immutable parameters structure risks resulting in potential financial loss.",
+  "issueId": 152,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/152",
+  "cohort": "cohort_3",
+  "sourceId": 209,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/209"
+}
