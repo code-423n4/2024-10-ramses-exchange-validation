@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "chaduke",
+  "risk": "2",
+  "title": "GaugeV3.notifyRewardAmount() does not roll over unclaimed emission due to no stakers from previous period, these emission will be stuck in the gauge forever.",
+  "issueId": 223,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/223",
+  "cohort": "cohort_3",
+  "sourceId": 272,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/272"
+}
