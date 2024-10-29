@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "DCENT09",
+  "risk": "3",
+  "title": "Re-entrancy concerns in pool creation could manipulate the pool creation process, possibly allowing an attacker to drain or modify liquidity.",
+  "issueId": 151,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/151",
+  "cohort": "cohort_3",
+  "sourceId": 208,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/208"
+}
