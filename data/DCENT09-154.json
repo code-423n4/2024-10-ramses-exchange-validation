@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "DCENT09",
+  "risk": "2",
+  "title": "Lack of reentrancy protection can lead to potentially creating multiple pools or draining funds from legitimate transactions",
+  "issueId": 154,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/154",
+  "cohort": "cohort_3",
+  "sourceId": 215,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/215"
+}
