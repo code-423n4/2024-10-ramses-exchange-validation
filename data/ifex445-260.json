@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "ifex445",
+  "risk": "2",
+  "title": "Lack of Liquidity Threshold Check in flash Function for Flashloan",
+  "issueId": 260,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/260",
+  "cohort": "cohort_3",
+  "sourceId": 160,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/160"
+}
