@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "DCENT09",
+  "risk": "2",
+  "title": "Unchecked arithmetic in reward calculation can result in unexpected token balances, ultimately leading to a lack of integrity in the liquidity positions and rewards distribution.",
+  "issueId": 172,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/172",
+  "cohort": "cohort_3",
+  "sourceId": 250,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/250"
+}
