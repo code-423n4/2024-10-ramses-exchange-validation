@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "safie",
+  "risk": "2",
+  "title": "Lack of period validation in `snapshotCumulativesInside` function allows invalid comparisons in `Oracle.sol`",
+  "issueId": 274,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/274",
+  "cohort": "cohort_3",
+  "sourceId": 169,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/169"
+}
