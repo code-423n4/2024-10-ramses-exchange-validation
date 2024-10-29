@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "DCENT09",
+  "risk": "3",
+  "title": "Reentrancy Vulnerability this could lead to unauthorized fund withdrawals or unexpected contract behavior.",
+  "issueId": 179,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/179",
+  "cohort": "cohort_3",
+  "sourceId": 259,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/259"
+}
