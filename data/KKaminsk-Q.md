@@ -1,0 +1,5 @@
+Contracts are not compatible with certain versions of solidity marked by floating pragma statement
+
+Contracts use `pragma solidity ^0.8.20;` https://github.com/code-423n4/2024-10-ramses-exchange/blob/main/contracts/CL/core/RamsesV3Pool.sol#L2 . This line indicates that the code is compatible with a compiler versions from `0.8.20` and above (but below `0.9.0`). This is not true because contracts use custom errors inside require statements https://github.com/code-423n4/2024-10-ramses-exchange/blob/main/contracts/CL/core/RamsesV3Pool.sol#L464 , feature introduced in solidity version `0.8.26` https://soliditylang.org/blog/2024/05/21/solidity-0.8.26-release-announcement/ . Because of that code will be not compatible with versions from `0.8.20` to `0.8.25`.
+
+Consider locking solidity version to newest version or use `pragma solidity ^0.8.26;`
