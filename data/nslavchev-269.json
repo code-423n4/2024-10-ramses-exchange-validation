@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "nslavchev",
+  "risk": "3",
+  "title": "On Pool initialization Oracle.initialize is called with a value for time 0",
+  "issueId": 269,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/269",
+  "cohort": "cohort_3",
+  "sourceId": 228,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/228"
+}
