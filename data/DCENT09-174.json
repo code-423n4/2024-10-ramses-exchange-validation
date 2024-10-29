@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "DCENT09",
+  "risk": "2",
+  "title": "Improper Authorization Check in burn Function could lead to unintended financial losses for users, as they may find their tokens permanently removed.",
+  "issueId": 174,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/174",
+  "cohort": "cohort_3",
+  "sourceId": 253,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/253"
+}
