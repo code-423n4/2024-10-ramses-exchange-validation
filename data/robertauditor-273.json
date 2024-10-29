@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "robertauditor",
+  "risk": "3",
+  "title": "Owner can receive bonus tokens by burning tokens first before mint",
+  "issueId": 273,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/273",
+  "cohort": "cohort_3",
+  "sourceId": 236,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/236"
+}
