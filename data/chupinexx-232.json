@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "chupinexx",
+  "risk": "3",
+  "title": "Unrestricted Pool Creation Leads to Potential Denial of Service in `setPoolFeeProtocolBatch`",
+  "issueId": 232,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/232",
+  "cohort": "cohort_3",
+  "sourceId": 275,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/275"
+}
