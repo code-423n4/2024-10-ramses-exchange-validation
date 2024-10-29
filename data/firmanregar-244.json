@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "firmanregar",
+  "risk": "2",
+  "title": "An attacker can exploit the unprotected initializers to manipulate the contract’s state",
+  "issueId": 244,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/244",
+  "cohort": "cohort_3",
+  "sourceId": 262,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/262"
+}
