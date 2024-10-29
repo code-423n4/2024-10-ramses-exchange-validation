@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "firmanregar",
+  "risk": "2",
+  "title": "Unsafe casting leads to incorrect calculations",
+  "issueId": 247,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/247",
+  "cohort": "cohort_3",
+  "sourceId": 267,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/267"
+}
