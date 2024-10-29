@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "NexusAudits",
+  "risk": "2",
+  "title": "Single-Signer Voter Control Over Gauge Creation Without Timelock Enables Irreversible Protocol Takeover",
+  "issueId": 200,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/200",
+  "cohort": "cohort_3",
+  "sourceId": 288,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/288"
+}
