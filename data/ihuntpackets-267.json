@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "ihuntpackets",
+  "risk": "3",
+  "title": "Authorization Bypass in 2024-10-ramses-exchange/contracts/CL/core/libraries/Position.sol",
+  "issueId": 267,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/267",
+  "cohort": "cohort_3",
+  "sourceId": 299,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/299"
+}
