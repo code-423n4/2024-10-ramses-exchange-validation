@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "DCENT09",
+  "risk": "2",
+  "title": "Uninitialized values in protocol Settings could lead to loss of revenue, unbalanced fees, and reduced trust among liquidity providers.",
+  "issueId": 149,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/149",
+  "cohort": "cohort_3",
+  "sourceId": 206,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/206"
+}
