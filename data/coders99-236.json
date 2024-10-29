@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "coders99",
+  "risk": "3",
+  "title": "Potential DoS in createPool due to Vulnerable initialize Call in RamsesV3Factory.sol",
+  "issueId": 236,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/236",
+  "cohort": "cohort_3",
+  "sourceId": 183,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/183"
+}
