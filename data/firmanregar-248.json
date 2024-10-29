@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "firmanregar",
+  "risk": "2",
+  "title": "Unprotected 'initialize' function is crucial for the functionality of the oracle.",
+  "issueId": 248,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/248",
+  "cohort": "cohort_3",
+  "sourceId": 268,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/268"
+}
