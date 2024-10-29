@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "DCENT09",
+  "risk": "2",
+  "title": "Tick spacing and overflow risks which could lead to overflow or calculation issues and may result in severe financial loss ",
+  "issueId": 148,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/148",
+  "cohort": "cohort_3",
+  "sourceId": 204,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/204"
+}
