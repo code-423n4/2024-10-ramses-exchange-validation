@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "sakibcy",
+  "risk": "3",
+  "title": "Anyone can call the functions which are `restricted` on `RamesesV3Factory.sol`",
+  "issueId": 279,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/279",
+  "cohort": "cohort_3",
+  "sourceId": 295,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/295"
+}
