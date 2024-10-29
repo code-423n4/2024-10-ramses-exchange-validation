@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "ThePharmacist",
+  "risk": "3",
+  "title": "Newly made positions can cause `Oracle.periodCumulativesInside` to make mistakes",
+  "issueId": 212,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/212",
+  "cohort": "cohort_3",
+  "sourceId": 278,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/278"
+}
