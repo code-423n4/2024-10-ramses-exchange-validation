@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "DCENT09",
+  "risk": "3",
+  "title": "Insecure reward tracking mechanism could lead to users claiming more rewards than entitled, causing contract funds to deplete quickly",
+  "issueId": 169,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/169",
+  "cohort": "cohort_3",
+  "sourceId": 244,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/244"
+}
