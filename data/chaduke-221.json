@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "chaduke",
+  "risk": "3",
+  "title": "NonfungiblePositionManager.mint() might leave some ETH In the contract, subject to being stolen by another user. ",
+  "issueId": 221,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/221",
+  "cohort": "cohort_3",
+  "sourceId": 190,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/190"
+}
