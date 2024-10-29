@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "MrPotatoMagic",
+  "risk": "3",
+  "title": "GaugeV3 incorrectly incentivizes liquidity providers",
+  "issueId": 186,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/186",
+  "cohort": "cohort_3",
+  "sourceId": 210,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/210"
+}
