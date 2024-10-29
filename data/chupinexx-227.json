@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "chupinexx",
+  "risk": "2",
+  "title": "Use of block.timestamp for Period Calculation  introduces a risk of manipulation",
+  "issueId": 227,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/227",
+  "cohort": "cohort_3",
+  "sourceId": 249,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/249"
+}
