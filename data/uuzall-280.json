@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "uuzall",
+  "risk": "3",
+  "title": "The `_updatePosition` in `Position.sol` has no restrictions on who can call it. ",
+  "issueId": 280,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/280",
+  "cohort": "cohort_3",
+  "sourceId": 162,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/162"
+}
