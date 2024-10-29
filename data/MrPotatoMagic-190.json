@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "MrPotatoMagic",
+  "risk": "2",
+  "title": "LP positions in low activity pools will have periodSecondsInsideX96 as 0 leading to no rewards",
+  "issueId": 190,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/190",
+  "cohort": "cohort_3",
+  "sourceId": 257,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/257"
+}
