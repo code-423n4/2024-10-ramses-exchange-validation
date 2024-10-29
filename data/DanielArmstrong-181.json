@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "DanielArmstrong",
+  "risk": "2",
+  "title": "`Oracle.sol#observeSingle()` function calculates `tickCumulative` with big error.",
+  "issueId": 181,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/181",
+  "cohort": "cohort_3",
+  "sourceId": 214,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/214"
+}
