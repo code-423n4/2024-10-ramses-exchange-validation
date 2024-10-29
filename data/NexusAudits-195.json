@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "NexusAudits",
+  "risk": "2",
+  "title": "Missing Position Existence Check in increaseLiquidity Function Allows Manipulation of Non-Existent Positions",
+  "issueId": 195,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/195",
+  "cohort": "cohort_3",
+  "sourceId": 283,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/283"
+}
