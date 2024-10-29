@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "ihuntpackets",
+  "risk": "3",
+  "title": "Delegate Injection in 2024-10-ramses-exchange/contracts/CL/periphery/NonfungiblePositionManager.sol",
+  "issueId": 265,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/265",
+  "cohort": "cohort_3",
+  "sourceId": 239,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/239"
+}
