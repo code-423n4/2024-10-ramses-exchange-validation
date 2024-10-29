@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "DCENT09",
+  "risk": "2",
+  "title": "Insufficient Input validation could lead to unexpected losses for users or allow for denial of service if certain conditions are not met.",
+  "issueId": 178,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/178",
+  "cohort": "cohort_3",
+  "sourceId": 258,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/258"
+}
