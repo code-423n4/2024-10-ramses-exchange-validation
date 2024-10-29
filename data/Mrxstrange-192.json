@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "Mrxstrange",
+  "risk": "2",
+  "title": "Missing Access Control in `initialize` Function",
+  "issueId": 192,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/192",
+  "cohort": "cohort_3",
+  "sourceId": 199,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/199"
+}
