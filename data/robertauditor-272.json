@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "robertauditor",
+  "risk": "2",
+  "title": "Exchangers can get more benefit by dividing the tokens they want to exchange into smaller amounts and swapping them all at once",
+  "issueId": 272,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/272",
+  "cohort": "cohort_3",
+  "sourceId": 235,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/235"
+}
