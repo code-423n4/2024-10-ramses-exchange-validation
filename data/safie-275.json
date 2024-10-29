@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "safie",
+  "risk": "2",
+  "title": "Gas optimization and execution order vulnerability in `FeeCollector.sol` ",
+  "issueId": 275,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/275",
+  "cohort": "cohort_3",
+  "sourceId": 170,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/170"
+}
