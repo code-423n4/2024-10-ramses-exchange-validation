@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "DCENT09",
+  "risk": "2",
+  "title": "Lack of parameter validation can lead to contract malfunction.",
+  "issueId": 163,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/163",
+  "cohort": "cohort_3",
+  "sourceId": 224,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/224"
+}
