@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "Tomasleocadio",
+  "risk": "2",
+  "title": "The pool creation in `PoolAddress` is prone to collision attacks. Wich will lead to malicious pool and lost of all funds.",
+  "issueId": 216,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/216",
+  "cohort": "cohort_3",
+  "sourceId": 187,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/187"
+}
