@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "DCENT09",
+  "risk": "3",
+  "title": "Unchecked Access Control that can cause significant financial losses and operational disruptions.",
+  "issueId": 147,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/147",
+  "cohort": "cohort_3",
+  "sourceId": 203,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/203"
+}
