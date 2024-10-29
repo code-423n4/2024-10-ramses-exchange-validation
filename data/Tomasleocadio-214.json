@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "Tomasleocadio",
+  "risk": "3",
+  "title": "OOG / unexpected reverts due to incorrect usage of staticcall.",
+  "issueId": 214,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/214",
+  "cohort": "cohort_3",
+  "sourceId": 173,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/173"
+}
