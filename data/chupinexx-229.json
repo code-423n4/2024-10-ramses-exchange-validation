@@ -1,0 +1,11 @@
+{
+  "contest": 447,
+  "handle": "chupinexx",
+  "risk": "3",
+  "title": "Unrestricted Access to collectProtocolFees and Missing Initial Treasury Fee Setting",
+  "issueId": 229,
+  "issueUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-validation/issues/229",
+  "cohort": "cohort_3",
+  "sourceId": 271,
+  "sourceUrl": "https://github.com/code-423n4/2024-10-ramses-exchange-live/issues/271"
+}
